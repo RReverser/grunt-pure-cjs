@@ -1,7 +1,7 @@
 {
   "name": "grunt-pure-cjs",
   "description": "Grunt plugin for Pure CJS builder",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "homepage": "https://github.com/RReverser/grunt-pure-cjs",
   "author": {
     "name": "Ingvar Stepanyan",
@@ -29,7 +29,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "pure-cjs": "~1.4.0",
+    "pure-cjs": "~1.6.0",
     "davy": "0.0.8"
   },
   "devDependencies": {

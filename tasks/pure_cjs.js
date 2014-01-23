@@ -37,6 +37,7 @@ module.exports = function (grunt) {
 			return cjs.transform({
 				input: file.src[0],
 				output: file.dest,
+				map: options.map,
 				exports: options.exports
 			});
 		})).then(done, grunt.fail.fatal);
