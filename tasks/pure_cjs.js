@@ -38,7 +38,8 @@ module.exports = function (grunt) {
 				input: file.src[0],
 				output: file.dest,
 				map: options.map,
-				exports: options.exports
+				exports: options.exports,
+				transform: options.transform
 			});
 		})).then(done, grunt.fail.fatal);
 	});
