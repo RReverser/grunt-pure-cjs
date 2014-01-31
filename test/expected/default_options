@@ -1,4 +1,4 @@
-(function() {
+(function(define) {
     function _require(index) {
         var module = _require.cache[index];
         
@@ -26,4 +26,4 @@
     }];
 
     _require(0);
-});
+})();
