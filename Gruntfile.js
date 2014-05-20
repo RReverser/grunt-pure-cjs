@@ -32,6 +32,7 @@ module.exports = function(grunt) {
 		pure_cjs: {
 			default_options: {
 				options: {
+					comments: true
 				},
 				files: {
 					'tmp/default_options': 'test/fixtures/a.js'
@@ -39,7 +40,8 @@ module.exports = function(grunt) {
 			},
 			custom_options: {
 				options: {
-					exports: 'A'
+					exports: 'A',
+					comments: true
 				},
 				files: {
 					'tmp/custom_options': 'test/fixtures/c.js',
