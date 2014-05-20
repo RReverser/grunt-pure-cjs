@@ -1,7 +1,7 @@
 {
   "name": "grunt-pure-cjs",
   "description": "Grunt plugin for Pure CJS builder",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "homepage": "https://github.com/RReverser/grunt-pure-cjs",
   "author": {
     "name": "Ingvar Stepanyan",
@@ -29,19 +29,22 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "pure-cjs": "~1.8.4",
-    "davy": "0.0.8"
+    "pure-cjs": "*",
+    "davy": "0.3.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.2"
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.4.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "commonjs",
+    "pure-cjs",
+    "browserify",
+    "alternative"
   ]
 }

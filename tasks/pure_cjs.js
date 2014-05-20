@@ -10,7 +10,8 @@
 
 var Promise = require('davy'),
 	cjs = require('pure-cjs'),
-	path = require('path');
+	path = require('path'),
+	extend = require('util')._extend;
 
 module.exports = function (grunt) {
 
@@ -34,13 +35,7 @@ module.exports = function (grunt) {
 
 			grunt.file.mkdir(path.dirname(file.dest));
 
-			return cjs.transform({
-				input: file.src[0],
-				output: file.dest,
-				map: options.map,
-				exports: options.exports,
-				transform: options.transform
-			});
+			return cjs.transform(extend({input: file.src[0], output: file.dest}, options));
 		})).then(done, grunt.fail.fatal);
 	});
 

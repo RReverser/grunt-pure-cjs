@@ -24,6 +24,7 @@ grunt.loadNpmTasks('grunt-pure-cjs');
 * **map**: `String|Function(input, output)|Boolean` &mdash; source map file; optional, doesn't generate source map by default; if `true` is provided, path default to `function (input, output) { return output + '.map' }`.
 * **exports**: `String|Function(input, output)` &mdash; Exports top module with [UMD](https://github.com/umdjs/umd) with given global object name; optional, doesn't wrap into UMD by default.
 * **transform**: `Array|Function(input)` &mdash; Array of or single function that returns transformation [through](https://github.com/dominictarr/through)-stream(s) to be used against input files before their usage; optional.
+* *See [Pure CommonJS builder](https://github.com/RReverser/pure-cjs) for other options.*
 
 If set, built module will be wrapped into anonymous function and exports from top (input) module will be placed into provided value.
 
